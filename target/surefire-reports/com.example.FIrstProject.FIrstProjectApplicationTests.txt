@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.FIrstProject.FIrstProjectApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.56 s -- in com.example.FIrstProject.FIrstProjectApplicationTests
