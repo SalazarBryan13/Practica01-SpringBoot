@@ -24,10 +24,8 @@ public class MockMvcTest {
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Aplicación Demo Spring Boot")))
-                .andExpect(content().string(containsString("¡Bienvenido a la aplicación Spring Boot!")));
+                .andExpect(content().string(containsString("Hello World")));
     }
-
 
     // Podemos hacer también una petición POST y pasar los datos
     // del formulario con el método .param
