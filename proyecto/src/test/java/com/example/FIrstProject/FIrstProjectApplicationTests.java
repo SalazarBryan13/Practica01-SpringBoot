@@ -1,4 +1,5 @@
 package com.example.FIrstProject;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,6 +21,6 @@ class FIrstProjectApplicationTests {
 
 	@Test
 	public void serviceSaludo()throws Exception {
-		assertThat(saluda.saludo("Juan")).isEqualTo("Hola Juan desde el servicio!");
+		assertThat(saluda.saludo("Juan")).isEqualTo("Hola Juan, bienvenido a la aplicación web!");
 	}
 }
