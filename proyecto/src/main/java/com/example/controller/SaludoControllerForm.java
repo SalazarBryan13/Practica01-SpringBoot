@@ -15,11 +15,11 @@ import jakarta.validation.Valid;
 @Controller
 public class SaludoControllerForm {
     @Autowired
-    private SaludoService service; 
+    private SaludoService service; // Inyección de dependencia
 
     @GetMapping("/saludoform")
     public String saludoForm(UserData userData) {
-        return "formRegistro"; 
+        return "formRegistro"; // nombre de la vista
     }
 
     @PostMapping("/saludoform")
@@ -28,7 +28,7 @@ public class SaludoControllerForm {
             return "formRegistro"; // nombre de la vista
         }
         model.addAttribute("mensaje", service.saludo(userData.getNombre())); // Llama al servicio para obtener el saludo
-        return "saludo"; 
+        return "saludo"; // nombre de la vista
 
     }
 }
