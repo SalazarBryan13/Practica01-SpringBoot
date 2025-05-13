@@ -16,7 +16,7 @@ public class SaludoControllerPlantilla {
 
     @RequestMapping("/saludoplantilla/{nombre}")
     public String saludo(@PathVariable(value = "nombre") String nombre,Model model) {
-        model.addAttribute("mensaje", service.saludo(nombre)); 
+        model.addAttribute("mensaje", service.saludo(nombre)); // Llama al servicio para obtener el saludo  
         return "saludo";
     }
     
